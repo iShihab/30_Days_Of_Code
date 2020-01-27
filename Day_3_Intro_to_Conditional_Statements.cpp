@@ -21,7 +21,7 @@ int main()
     }
     else if (N % 2 == 0 && N > 20)
     {
-        cout << "Not Wird" << endl;
+        cout << "Not Weird" << endl;
     }
 
     return 0;
