@@ -13,7 +13,7 @@ int main()
     }
     else if (N >= 2 && N <= 5)
     {
-        cout << "Not Wird" << endl;
+        cout << "Not Weird" << endl;
     }
     else if (N >= 6 && N <= 20)
     {
