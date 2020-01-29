@@ -16,8 +16,7 @@ Person::Person(int initialAge)
     {
         age = 0;
         cout << "Age is not valid, setting age to 0." << endl;
-        exit(0);
-    }
+        }
     else
     {
         age = initialAge;
