@@ -1,30 +1,48 @@
-#include <bits/stdc++.h>
+using namespace std;
 #include <iostream>
 
-using namespace std;
-
-class Geeks
+class Person
 {
 public:
-    string geekname;
-    int id;
-    void printname();
-    void printid()
-    {
-        cout << "Geek id is: " << id;
-    }
+    int age;
+    Person(int initialAge);
+    void amIOld();
+    void yearPasses();
 };
-void Geeks::printname()
+
+Person::Person(int initialAge)
 {
-    cout << "Geekname is : " << geekname;
+    // Add some more code to run some checks on initialAge
 }
-int main(int argc, char const *argv[])
+
+void Person::amIOld()
 {
-    Geeks obj1;
-    obj1.geekname = "xry";
-    obj1.id = 15;
-    obj1.printname();
-    cout << endl;
-    obj1.printid();
+    // Do some computations in here and print out the correct statement to the console
+}
+
+void Person::yearPasses()
+{
+    // Increment the age of the person in here
+}
+
+int main()
+{
+    int t;
+    int age;
+    cin >> t;
+    for (int i = 0; i < t; i++)
+    {
+        cin >> age;
+        Person p(age);
+        p.amIOld();
+        for (int j = 0; j < 3; j++)
+        {
+            p.yearPasses();
+        }
+        p.amIOld();
+
+        cout << '\n';
+    }
+
     return 0;
 }
